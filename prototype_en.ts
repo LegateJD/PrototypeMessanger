@@ -40,7 +40,8 @@
     </message>
     <message>
         <location filename="accountwindow.ui" line="91"/>
-        <location filename="accountwindow.cpp" line="126"/>
+        <location filename="accountwindow.cpp" line="127"/>
+        <location filename="accountwindow.cpp" line="169"/>
         <source>Change account name</source>
         <translation>Change account name</translation>
     </message>
@@ -50,22 +51,22 @@
         <translation>Change account password</translation>
     </message>
     <message>
-        <location filename="accountwindow.cpp" line="52"/>
+        <location filename="accountwindow.cpp" line="53"/>
         <source>Account</source>
         <translation>Account</translation>
     </message>
     <message>
-        <location filename="accountwindow.cpp" line="124"/>
+        <location filename="accountwindow.cpp" line="125"/>
         <source>Go to conversation</source>
         <translation>Go to conversation</translation>
     </message>
     <message>
-        <location filename="accountwindow.cpp" line="125"/>
+        <location filename="accountwindow.cpp" line="126"/>
         <source>Add account to blacklist</source>
         <translation>Add contact to blacklist</translation>
     </message>
     <message>
-        <location filename="accountwindow.cpp" line="158"/>
+        <location filename="accountwindow.cpp" line="168"/>
         <source>Remove from blacklist</source>
         <translation>Remove contact from blacklist</translation>
     </message>
@@ -143,18 +144,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conversationwindow.cpp" line="81"/>
-        <location filename="conversationwindow.cpp" line="211"/>
+        <location filename="conversationwindow.cpp" line="83"/>
+        <location filename="conversationwindow.cpp" line="213"/>
         <source>Delete message</source>
         <translation>Delete message</translation>
     </message>
     <message>
-        <location filename="conversationwindow.cpp" line="117"/>
+        <location filename="conversationwindow.cpp" line="119"/>
         <source>Contact name</source>
         <translation>Contact name</translation>
     </message>
     <message>
-        <location filename="conversationwindow.cpp" line="118"/>
+        <location filename="conversationwindow.cpp" line="120"/>
         <source>Contact Global User Id</source>
         <translation>Contact Global User Id</translation>
     </message>
@@ -187,27 +188,27 @@
         <translation>Password</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="29"/>
+        <location filename="createaccountwindow.cpp" line="30"/>
         <source>Account name cannot be empty</source>
         <translation>Account name cannot be empty</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="36"/>
+        <location filename="createaccountwindow.cpp" line="37"/>
         <source>Password cannot be empty</source>
         <translation>Password cannot be empty</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="60"/>
+        <location filename="createaccountwindow.cpp" line="61"/>
         <source>Validation error</source>
         <translation>Validation error</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="60"/>
+        <location filename="createaccountwindow.cpp" line="61"/>
         <source>Account name is already taken</source>
         <translation>Account name is already taken</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="82"/>
+        <location filename="createaccountwindow.cpp" line="93"/>
         <source>Incorrect password</source>
         <translation>Incorrect password</translation>
     </message>

@@ -77,6 +77,14 @@ void CreateAccountWindow::on_registerButton_clicked()
     query.bindValue(":date", dateTime.toString("yyyy-MM-dd HH:mm:ss"));
     if(query.exec()){
         qDebug() << "Succesful";
+        query.prepare("SELECT last_insert_rowid();");
+        query.exec();
+        query.first();
+        auto lastId = query.value(0).toInt();
+        query.prepare("INSERT INTO Keys (Public_Key,Private_Key,Created_At,AccountId) VALUES ('asffffffffffffffffffklhjkjghkjshdkjghsdkg','hfdhdfghhfhfdhfffffffffffffklhjkjghkjshdkjghsdkg',:date,:accountId);");
+        query.bindValue(":date", dateTime.toString("yyyy-MM-dd HH:mm:ss"));
+        query.bindValue(":accountId", lastId);
+        query.exec();
         emit accountCreatedSignal();
         hide();
     } else{

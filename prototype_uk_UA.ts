@@ -40,7 +40,8 @@
     </message>
     <message>
         <location filename="accountwindow.ui" line="91"/>
-        <location filename="accountwindow.cpp" line="126"/>
+        <location filename="accountwindow.cpp" line="127"/>
+        <location filename="accountwindow.cpp" line="169"/>
         <source>Change account name</source>
         <translation>Змінити ім&apos;я</translation>
     </message>
@@ -50,22 +51,22 @@
         <translation>Змінити пароль аккаунта</translation>
     </message>
     <message>
-        <location filename="accountwindow.cpp" line="52"/>
+        <location filename="accountwindow.cpp" line="53"/>
         <source>Account</source>
         <translation>Аккаунт</translation>
     </message>
     <message>
-        <location filename="accountwindow.cpp" line="124"/>
+        <location filename="accountwindow.cpp" line="125"/>
         <source>Go to conversation</source>
         <translation>Відкрити вікно з перепискою</translation>
     </message>
     <message>
-        <location filename="accountwindow.cpp" line="125"/>
+        <location filename="accountwindow.cpp" line="126"/>
         <source>Add account to blacklist</source>
         <translation>Додати контакт до чорного списку</translation>
     </message>
     <message>
-        <location filename="accountwindow.cpp" line="158"/>
+        <location filename="accountwindow.cpp" line="168"/>
         <source>Remove from blacklist</source>
         <translation>Видалити контакт з чорного листа</translation>
     </message>
@@ -143,18 +144,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="conversationwindow.cpp" line="81"/>
-        <location filename="conversationwindow.cpp" line="211"/>
+        <location filename="conversationwindow.cpp" line="83"/>
+        <location filename="conversationwindow.cpp" line="213"/>
         <source>Delete message</source>
         <translation>Видалити повідомлення</translation>
     </message>
     <message>
-        <location filename="conversationwindow.cpp" line="117"/>
+        <location filename="conversationwindow.cpp" line="119"/>
         <source>Contact name</source>
         <translation>Ім&apos;я контакту</translation>
     </message>
     <message>
-        <location filename="conversationwindow.cpp" line="118"/>
+        <location filename="conversationwindow.cpp" line="120"/>
         <source>Contact Global User Id</source>
         <translation>Глобальний ідентифікатор контакту</translation>
     </message>
@@ -187,27 +188,27 @@
         <translation>Пароль</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="29"/>
+        <location filename="createaccountwindow.cpp" line="30"/>
         <source>Account name cannot be empty</source>
         <translation>Ім&apos;я аккаунта не може бути пустим</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="36"/>
+        <location filename="createaccountwindow.cpp" line="37"/>
         <source>Password cannot be empty</source>
         <translation>Пароль не може бути пустим</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="60"/>
+        <location filename="createaccountwindow.cpp" line="61"/>
         <source>Validation error</source>
         <translation>Валідаційна помилка</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="60"/>
+        <location filename="createaccountwindow.cpp" line="61"/>
         <source>Account name is already taken</source>
         <translation>Ім&apos;я аккаунта вже зайнято</translation>
     </message>
     <message>
-        <location filename="createaccountwindow.cpp" line="82"/>
+        <location filename="createaccountwindow.cpp" line="93"/>
         <source>Incorrect password</source>
         <translation>Невірний пароль</translation>
     </message>
@@ -315,7 +316,7 @@
     <message>
         <location filename="mainwindow.ui" line="51"/>
         <source>Options</source>
-        <translation>Настройки</translation>
+        <translation>Налаштування</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="55"/>

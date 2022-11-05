@@ -82,6 +82,8 @@ void MainWindow::onListViewDelete()
            }
 
         QSqlQuery query;
+        query.prepare("PRAGMA foreign_keys = ON;");
+        query.exec();
         query.prepare("DELETE FROM Accounts WHERE ID = :accountId;");
         query.bindValue(":accountId", accountId);
         if(query.exec()){
@@ -133,8 +135,26 @@ void MainWindow::createLanguageMenu(void) {
  langGroup = new QActionGroup(ui->menuLanguage);
  connect(ui->menuLanguage, SIGNAL (triggered(QAction *)), this, SLOT (slotLanguageChanged(QAction *)));
 
- QString defaultLocale = QLocale::system().name();
- defaultLocale.truncate(defaultLocale.lastIndexOf('_'));
+ QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+ db.setDatabaseName("database");
+ if (!db.open())
+    {
+       qDebug() << "Error: connection with database failed";
+    }
+    else
+    {
+       qDebug() << "Database: connection ok";
+    }
+
+ QSqlQuery query;
+ query.prepare("SELECT Value FROM Settings WHERE Key = 'Language';");
+ query.exec();
+ qDebug() << "Succesful";
+ query.first();
+ auto defaultLocale = query.value(0).toString();
+
+ //QString defaultLocale = QLocale::system().name();
+ //defaultLocale.truncate(defaultLocale.lastIndexOf('_'));
  m_langPath = QApplication::applicationDirPath();
  QDir dir(m_langPath);
  QStringList fileNames = dir.entryList(QStringList("prototype_*.qm"));
@@ -199,6 +219,26 @@ void MainWindow::loadLanguage(const QString& rLanguage) {
   QLocale::setDefault(locale);
   QString languageName = QLocale::languageToString(locale.language());
   switchTranslator(m_translator, QString("prototype_%1.qm").arg(rLanguage));
+  QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+  db.setDatabaseName("database");
+  if (!db.open())
+     {
+        qDebug() << "Error: connection with database failed";
+     }
+     else
+     {
+        qDebug() << "Database: connection ok";
+     }
+
+  QSqlQuery query;
+  query.prepare("UPDATE Settings SET Value = :lang WHERE Key = 'Language'");
+  query.bindValue(":lang", rLanguage);
+  if(query.exec()){
+      qDebug() << "Succesful";
+  } else{
+      qDebug() << "Error with query" << query.lastError().text();
+  }
+  db.close();
  }
 }
 
